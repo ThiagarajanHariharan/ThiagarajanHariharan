@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🚀 Thiagarajan Hariharan
-### Cloud Infrastructure & AI Pipeline Engineer | Republic Polytechnic
+### Enterprise Cloud Computing & AI Pipeline Engineer | Republic Polytechnic
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio_Website-Live-2563eb?style=for-the-badge)](https://thiagarajanhariharan.github.io/portfolio/)
 [![Arcade](https://img.shields.io/badge/👾_Contribution_Blaster-Play_Arcade-10b981?style=for-the-badge)](https://thiagarajanhariharan.github.io/portfolio/contribution-blaster.html)
@@ -9,38 +9,52 @@
 
 ---
 
-### 🕹️ Interactive Contribution Blaster & Tactical Nuke
-<!-- Animated SVG arcade demonstration -->
+### 🕹️ Interactive Contribution Blaster & Tactical Nuke Strike
 <a href="https://thiagarajanhariharan.github.io/portfolio/contribution-blaster.html">
   <img src="./blaster-animation.svg" width="100%" alt="Contribution Blaster Animation" />
 </a>
 
-*👆 Click the banner above to launch the live playable arcade in your browser!*
+*👆 Click the animated banner above to play the live arcade and launch tactical nukes in your browser!*
 
 </div>
 
 ---
 
-## 🛠️ Featured Engineering Projects
+## 🛠️ Project Portfolio & Systems Engineering
 
-### 1. 🧠 M1 Edge AI Local Pipeline
-- **Private Video Intelligence on Apple Silicon:** Fully local, offline pipeline capable of processing 90-minute technical recordings on an M1 MacBook (16GB RAM).
-- **Vision OCR:** Qwen2.5-VL (7B) running locally via Ollama to extract slides, network topologies, and dense diagrams.
-- **Audio Intelligence:** OpenAI Whisper (Small) generating timestamped transcriptions.
-- **Thermal & GPU Optimization:** Sustained 11-hour 100% GPU workload at a steady 71°C safely handling 535 visual frames without cloud egress.
-
-### 2. ☁️ Campus Found (AWS Cloud & DevOps Platform)
-- **Containerized Lost-and-Found Platform:** Deployed to AWS EKS with an Application Load Balancer across multi-AZ VPC subnets.
-- **Infrastructure as Code:** Provisioned using Terraform for repeatable zero-drift AWS infrastructure.
-- **AI Verification:** Integrated Gemini AI for real-time item identification and custody matching.
-- **Live Demo:** [showcaseawscapability.netlify.app](https://showcaseawscapability.netlify.app/) | **Code:** [github.com/ThiagarajanHariharan/campus-found](https://github.com/ThiagarajanHariharan/campus-found)
+### 🤖 AI, Vision & Local Intelligence
+| Project | Tech Stack | Highlights |
+| :--- | :--- | :--- |
+| **[M1 Edge Local AI Pipeline](https://github.com/ThiagarajanHariharan/portfolio)** | Qwen2.5-VL (7B), Whisper, PyTorch, Ollama | Fully local, zero-cloud private intelligence pipeline processing 90-min technical meeting recordings on an M1 MacBook (16GB RAM) over 11h sustained GPU load. |
+| **[AutoVideoClipper](https://github.com/ThiagarajanHariharan/autovideoclipper)** | Python, Flask, Local LLMs, FFmpeg | AI video segmentation and clipping suite. Added a custom Web UI dashboard and JSON enforcement for reliable local LLM inference. |
+| **[Document Processor API](https://github.com/ThiagarajanHariharan/Document-Processor)** | Python, Gemini Vision API, Flask | AI document analysis engine extracting structured JSON data from candidate resumes and technical diagrams. |
+| **[Questify](https://github.com/ThiagarajanHariharan/Questify)** | Node.js, Express, EJS, Google Gemini | AI-powered personalized real-world quest generator with mood-based difficulty calibration and verification. |
 
 ---
 
-## 🎖️ Certifications & Technical Skills
-- **Cloud & DevOps:** AWS Well-Architected Certified, Amazon EKS, Terraform, Docker, Kubernetes, Linux (Red Hat RH124 / RH134 Certified)
-- **Networking & Automation:** Cisco DevNet Associate, Enterprise Cloud Management
-- **Languages & Frameworks:** Python, Bash, JavaScript / TypeScript, Tailwind CSS, PostgreSQL
+### ☁️ Cloud, DevOps & Microservices
+| Project | Tech Stack | Highlights |
+| :--- | :--- | :--- |
+| **[Campus Found](https://github.com/ThiagarajanHariharan/campus-found)** | AWS EKS, Terraform, PostgreSQL, Gemini AI | Containerized campus platform with automated IaC provisioning, multi-AZ VPC, ALB ingress routing, and AI custody matching. |
+| **[CampusQuest Go](https://github.com/ThiagarajanHariharan/Campquest)** | Docker, Kubernetes, Strava API, Express | Microservices health and rewards platform featuring Strava fitness point conversion and geofenced canteen stall ordering. |
+| **[SupermarketApp Cloud Deployment](https://github.com/ThiagarajanHariharan/supermarketapp-l20)** | Node.js, Express, Azure MySQL, Render | Production-ready full-stack database application provisioned with managed cloud databases and continuous deployment. |
+
+---
+
+### 🔒 Security, Developer Tools & Mobile
+| Project | Tech Stack | Highlights |
+| :--- | :--- | :--- |
+| **[GitHub Profile Cleaner & Auditor](https://github.com/ThiagarajanHariharan/github-profile-cleaner)** | Python, Web Dashboard, Git Tools | Automated repository security scanner for leaked API secrets, README standardizer, and automated portfolio builder. |
+| **[Quartermaster](https://github.com/ThiagarajanHariharan/Quartermaster)** | Flutter, Dart, Cross-Platform | Mobile inventory management application engineered for responsive asset tracking across mobile platforms. |
+| **[LifeOS](https://github.com/ThiagarajanHariharan/LifeOS)** | Android, Kotlin, Google AI Studio | Native Android productivity suite integrating on-device AI for habit tracking and execution workflow. |
+| **[Cisco DEVASC Automation Team](https://github.com/ThiagarajanHariharan/devasc-study-team)** | Python, REST APIs, Cisco DevNet | Network programmability scripts, YANG data models, and automated Cisco infrastructure testing suites. |
+
+---
+
+## 🎖️ Certifications & Technical Arsenal
+- **Cloud & DevOps:** AWS Well-Architected Certified, Amazon EKS, Terraform, Docker, Kubernetes, Red Hat Enterprise Linux (RH124 / RH134 Certified)
+- **Networking & Programmability:** Cisco DevNet Associate, Enterprise Cloud Management
+- **Languages & Frameworks:** Python, JavaScript / TypeScript, Dart (Flutter), Kotlin, Bash, Tailwind CSS, PostgreSQL
 
 ---
 
