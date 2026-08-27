@@ -1,0 +1,328 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 280" width="100%" height="280" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes gun-aim {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-16deg); }
+      50% { transform: rotate(14deg); }
+      75% { transform: rotate(-8deg); }
+    }
+    @keyframes laser-shot {
+      0% { transform: translate(410px, 220px) scale(0); opacity: 0; }
+      10% { transform: translate(410px, 220px) scale(1); opacity: 1; }
+      35% { transform: translate(260px, 60px) scale(1.2); opacity: 1; }
+      36% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes missile-flight {
+      0%, 40% { transform: translate(410px, 230px) scale(0); opacity: 0; }
+      45% { transform: translate(410px, 230px) scale(1); opacity: 1; }
+      75% { transform: translate(580px, 75px) scale(1.3); opacity: 1; }
+      76% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes target-lock {
+      0%, 25% { opacity: 0; transform: scale(1.8); }
+      30%, 75% { opacity: 1; transform: scale(1); }
+      78%, 100% { opacity: 0; transform: scale(0.6); }
+    }
+    @keyframes explosion-pop {
+      0%, 74% { opacity: 0; transform: translate(580px, 75px) scale(0); }
+      76% { opacity: 1; transform: translate(580px, 75px) scale(1.6); }
+      88% { opacity: 0.8; transform: translate(580px, 75px) scale(2.2); }
+      96%, 100% { opacity: 0; transform: translate(580px, 75px) scale(2.6); }
+    }
+    @keyframes hit-tile-flash {
+      0%, 75% { fill: #1e293b; }
+      76%, 100% { fill: #22c55e; filter: drop-shadow(0 0 6px #4ade80); }
+    }
+    @keyframes float-text {
+      0%, 75% { opacity: 0; transform: translateY(0); }
+      80% { opacity: 1; transform: translateY(-8px); }
+      95%, 100% { opacity: 0; transform: translateY(-22px); }
+    }
+
+    .gun-recoil { transform-origin: 410px 245px; animation: gun-aim 6s infinite ease-in-out; }
+    .laser-beam { animation: laser-shot 6s infinite ease-out; }
+    .tactical-missile { animation: missile-flight 6s infinite cubic-bezier(0.25, 1, 0.5, 1); }
+    .target-marker { transform-origin: 580px 75px; animation: target-lock 6s infinite ease-out; }
+    .nuke-burst { transform-origin: 580px 75px; animation: explosion-pop 6s infinite ease-out; }
+    .target-tile { animation: hit-tile-flash 6s infinite; }
+    .badge-pop { transform-origin: 580px 75px; animation: float-text 6s infinite ease-out; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: bold; }
+  </style>
+
+  <!-- Container Frame -->
+  <rect width="820" height="280" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Top Title HUD -->
+  <g transform="translate(30, 28)">
+    <circle cx="6" cy="6" r="4" fill="#10b981" />
+    <text x="18" y="10" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="1.5">CONTRIBUTION BLASTER // TACTICAL NUKE STRIKE</text>
+    <text x="640" y="10" fill="#94a3b8" font-family="monospace" font-size="11">STREAK: 100% 🔥</text>
+  </g>
+
+  <!-- Heatmap Matrix Background (Sample 28 Weeks Grid) -->
+  <g transform="translate(45, 52)">
+    <!-- Week Columns -->
+    <!-- Col 1 -->
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+    <rect x="0" y="16" width="12" height="12" rx="2" fill="#064e3b" />
+    <rect x="0" y="32" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+    <rect x="0" y="48" width="12" height="12" rx="2" fill="#10b981" />
+    <rect x="0" y="64" width="12" height="12" rx="2" fill="#047857" />
+
+    <!-- Col 2 -->
+    <rect x="18" y="0" width="12" height="12" rx="2" fill="#047857" />
+    <rect x="18" y="16" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+    <rect x="18" y="32" width="12" height="12" rx="2" fill="#10b981" />
+    <rect x="18" y="48" width="12" height="12" rx="2" fill="#059669" />
+    <rect x="18" y="64" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+
+    <!-- Col 3 -->
+    <rect x="36" y="0" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+    <rect x="36" y="16" width="12" height="12" rx="2" fill="#059669" />
+    <rect x="36" y="32" width="12" height="12" rx="2" fill="#047857" />
+    <rect x="36" y="48" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+    <rect x="36" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+    <!-- Col 4 -->
+    <rect x="54" y="0" width="12" height="12" rx="2" fill="#10b981" />
+    <rect x="54" y="16" width="12" height="12" rx="2" fill="#059669" />
+    <rect x="54" y="32" width="12" height="12" rx="2" fill="#047857" />
+    <rect x="54" y="48" width="12" height="12" rx="2" fill="#0f172a" stroke="#1e293b" />
+    <rect x="54" y="64" width="12" height="12" rx="2" fill="#059669" />
+
+    <!-- Col 5 - 12 (Pattern Fill) -->
+    <g transform="translate(72, 0)">
+      <rect x="0" y="0" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="0" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="0" y="32" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="0" y="48" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="0" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="18" y="0" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="18" y="16" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="18" y="32" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="18" y="48" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="18" y="64" width="12" height="12" rx="2" fill="#0f172a" />
+
+      <rect x="36" y="0" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="36" y="16" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="36" y="32" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="36" y="48" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="36" y="64" width="12" height="12" rx="2" fill="#047857" />
+
+      <rect x="54" y="0" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="54" y="16" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="54" y="32" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="54" y="48" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="54" y="64" width="12" height="12" rx="2" fill="#059669" />
+
+      <rect x="72" y="0" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="72" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="72" y="32" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="72" y="48" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="72" y="64" width="12" height="12" rx="2" fill="#0f172a" />
+    </g>
+
+    <!-- Col 13 - 24 -->
+    <g transform="translate(216, 0)">
+      <!-- Laser Target Tile (Col index ~14) -->
+      <rect x="0" y="0" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="0" y="16" width="12" height="12" rx="2" fill="#34d399" filter="url(#glow-cyan)" />
+      <rect x="0" y="32" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="0" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="0" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="18" y="0" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="18" y="16" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="18" y="32" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="18" y="48" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="18" y="64" width="12" height="12" rx="2" fill="#0f172a" />
+
+      <rect x="36" y="0" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="36" y="16" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="36" y="32" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="36" y="48" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="36" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="54" y="0" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="54" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="54" y="32" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="54" y="48" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="54" y="64" width="12" height="12" rx="2" fill="#047857" />
+    </g>
+
+    <!-- Col 25 - 40 (Tactical Strike Target Zone) -->
+    <g transform="translate(360, 0)">
+      <rect x="0" y="0" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="0" y="16" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="0" y="32" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="0" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="0" y="64" width="12" height="12" rx="2" fill="#059669" />
+
+      <rect x="18" y="0" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="18" y="16" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="18" y="32" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="18" y="48" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="18" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <!-- NUCLEAR IMPACT TARGET TILE -->
+      <rect x="175" y="23" width="14" height="14" rx="2" class="target-tile" />
+
+      <rect x="36" y="0" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="36" y="16" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="36" y="32" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="36" y="48" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="36" y="64" width="12" height="12" rx="2" fill="#047857" />
+
+      <rect x="54" y="0" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="54" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="54" y="32" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="54" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="54" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="72" y="0" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="72" y="16" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="72" y="32" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="72" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="72" y="64" width="12" height="12" rx="2" fill="#059669" />
+
+      <rect x="90" y="0" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="90" y="16" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="90" y="32" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="90" y="48" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="90" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="108" y="0" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="108" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="108" y="32" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="108" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="108" y="64" width="12" height="12" rx="2" fill="#047857" />
+
+      <rect x="126" y="0" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="126" y="16" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="126" y="32" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="126" y="48" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="126" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="144" y="0" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="144" y="16" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="144" y="32" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="144" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="144" y="64" width="12" height="12" rx="2" fill="#059669" />
+
+      <rect x="162" y="0" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="162" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="162" y="48" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="162" y="64" width="12" height="12" rx="2" fill="#0f172a" />
+
+      <rect x="180" y="0" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="180" y="48" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="180" y="64" width="12" height="12" rx="2" fill="#047857" />
+
+      <rect x="198" y="0" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="198" y="16" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="198" y="32" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="198" y="48" width="12" height="12" rx="2" fill="#0f172a" />
+      <rect x="198" y="64" width="12" height="12" rx="2" fill="#10b981" />
+
+      <rect x="216" y="0" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="216" y="16" width="12" height="12" rx="2" fill="#059669" />
+      <rect x="216" y="32" width="12" height="12" rx="2" fill="#047857" />
+      <rect x="216" y="48" width="12" height="12" rx="2" fill="#10b981" />
+      <rect x="216" y="64" width="12" height="12" rx="2" fill="#0f172a" />
+    </g>
+  </g>
+
+  <!-- Red Target Lock-on Brackets [ 🎯 X ] -->
+  <g class="target-marker">
+    <rect x="572" y="67" width="16" height="16" fill="none" stroke="#ef4444" stroke-width="2" />
+    <line x1="575" y1="70" x2="585" y2="80" stroke="#ef4444" stroke-width="2" />
+    <line x1="585" y1="70" x2="575" y2="80" stroke="#ef4444" stroke-width="2" />
+    <text x="560" y="60" fill="#ef4444" font-family="monospace" font-size="9" font-weight="bold" filter="url(#glow-red)">LOCK [X]</text>
+  </g>
+
+  <!-- Flying Plasma Bolt (Laser) -->
+  <g class="laser-beam">
+    <circle cx="0" cy="0" r="5" fill="#38bdf8" filter="url(#glow-cyan)" />
+    <line x1="0" y1="0" x2="10" y2="12" stroke="#bae6fd" stroke-width="3" />
+  </g>
+
+  <!-- Ballistic Cruise Missile -->
+  <g class="tactical-missile">
+    <ellipse cx="0" cy="0" rx="5" ry="3" fill="#f97316" filter="url(#glow-gold)" />
+    <circle cx="-5" cy="0" r="2.5" fill="#ef4444" />
+    <!-- Thruster Tail -->
+    <polygon points="-5,-2 -14,0 -5,2" fill="#facc15" />
+  </g>
+
+  <!-- Nuclear Detonation Blast Rings & Sparks -->
+  <g class="nuke-burst">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#22c55e" stroke-width="3" filter="url(#glow-cyan)" />
+    <circle cx="0" cy="0" r="8" fill="#facc15" opacity="0.9" />
+    <polygon points="0,-16 4,-4 16,0 4,4 0,16 -4,4 -16,0 -4,-4" fill="#ffffff" />
+  </g>
+
+  <!-- Floating Achievement Popups -->
+  <text x="545" y="55" fill="#4ade80" font-size="12" class="badge-pop" filter="url(#glow-cyan)">💥 NUKE STRIKE! +1,000 XP</text>
+
+  <!-- Cartoon Sci-Fi Raygun Base (Centered Bottom) -->
+  <g class="gun-recoil">
+    <!-- Base -->
+    <ellipse cx="410" cy="255" rx="26" ry="7" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <path d="M403 252 L405 235 L415 235 L417 252 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    
+    <!-- Raygun Body -->
+    <path d="M394 235 C394 220 402 215 410 215 C418 215 426 220 426 235 C426 240 420 242 410 242 C400 242 394 240 394 235 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    
+    <!-- Glowing Plasma Core -->
+    <circle cx="410" cy="228" r="4" fill="#38bdf8" filter="url(#glow-cyan)"/>
+    
+    <!-- Nozzle Rings -->
+    <ellipse cx="410" cy="214" rx="10" ry="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1"/>
+    <ellipse cx="410" cy="207" rx="7" ry="2.5" fill="#0284c7" stroke="#38bdf8" stroke-width="1"/>
+    
+    <!-- Muzzle Tip -->
+    <path d="M407 207 L405 198 L415 198 L413 207 Z" fill="#0369a1" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="410" cy="197" r="3" fill="#ffffff" filter="url(#glow-cyan)"/>
+  </g>
+</svg>
