@@ -57,18 +57,26 @@ I am an **Enterprise Cloud Computing & Management** student at **Republic Polyte
 - **AI Verification:** Integrated Gemini AI for real-time item identification and claim verification.
 - **Showcase:** [showcaseawscapability.netlify.app](https://showcaseawscapability.netlify.app/) | **Code:** [campus-found](https://github.com/ThiagarajanHariharan/campus-found)
 
+### 🛡️ 3. Quartermaster (Military Accountability & Edge CV Fitness Engine)
+- **100% Offline Computer Vision:** Real-time pose estimation using Google ML Kit with 1-Euro adaptive jitter filtering, 3D joint symmetry angles, and concentric velocity tracking.
+- **Cyberpunk HUD & Kinematics:** Custom Canvas matrix rendering holographic skeletons, muscle fatigue heatmaps, 3D floor grids, and Ghost Pacer overlays.
+- **Local AI & Audio Coach:** `fllama` on-device LLM for dynamic Drill Sergeant roasts and mission briefings, paired with `flutter_tts` synthesized telemetry and hands-free verbal commands.
+- **P2P Mesh Squad Raids:** Local WebSocket network mesh discovery over Bonjour (`_quartermaster._tcp`) for zero-cloud, multi-device squad workout races.
+- **Hardcore Security & Lockdown:** DEFCON penalty escalation with Android Device Administrator lockout and AES-GCM encrypted blackbox vault.
+- **Quality Standard:** 320 unit/widget/integration test suites with **100% pass rate** & 0 analyzer issues. | **Code:** [Quartermaster](https://github.com/ThiagarajanHariharan/Quartermaster)
+
 ---
 
 ## 📦 Complete GitHub Repositories Catalog
 
 | Project | Domain | Tech Stack | Highlights |
 | :--- | :--- | :--- | :--- |
+| **[Quartermaster](https://github.com/ThiagarajanHariharan/Quartermaster)** | Mobile & CV | Flutter, Dart, ML Kit, fllama LLM, Drift | Military-themed accountability app with 100% offline pose kinematics, cyberpunk HUD, local audio coach, and P2P squad mesh sync. 320 tests (100% pass). |
 | **[AutoVideoClipper](https://github.com/ThiagarajanHariharan/autovideoclipper)** | AI & Video | Python, Flask, Local LLMs, FFmpeg | Custom Web UI dashboard & strict JSON schema validation for local LLM video segmentation. |
 | **[Document Processor API](https://github.com/ThiagarajanHariharan/Document-Processor)** | AI & OCR | Python, Gemini Vision, REST | AI document analysis pipeline extracting structured candidate JSON from resumes and blueprints. |
 | **[CampusQuest Go](https://github.com/ThiagarajanHariharan/Campquest)** | Microservices | Docker, Kubernetes, Strava API | Location-aware campus health & rewards platform with Strava workout point conversion. |
 | **[Questify](https://github.com/ThiagarajanHariharan/Questify)** | Web & AI | Node.js, Express, EJS, Gemini AI | Personalized real-world challenge generator with automated AI completion proof evaluation. |
 | **[GitHub Profile Cleaner & Auditor](https://github.com/ThiagarajanHariharan/github-profile-cleaner)** | Security & Tools | Python, Web Dashboard, Git API | Automated repository security scanner for leaked credentials, README sync, and portfolio builder. |
-| **[Quartermaster](https://github.com/ThiagarajanHariharan/Quartermaster)** | Mobile | Flutter, Dart | Cross-platform inventory tracking and asset operations application. |
 | **[LifeOS](https://github.com/ThiagarajanHariharan/LifeOS)** | Mobile & AI | Android, Kotlin, Google AI Studio | Native Android productivity suite integrating on-device AI habit tracking. |
 | **[SupermarketApp Cloud](https://github.com/ThiagarajanHariharan/supermarketapp-l20)** | Cloud DB | Node.js, Azure MySQL, Render | Full-stack cloud database platform with managed Azure MySQL and continuous deployment. |
 | **[Cisco DEVASC Automation](https://github.com/ThiagarajanHariharan/devasc-study-team)** | Network Dev | Python, REST APIs, Cisco DevNet | Network programmability scripts, YANG models, and automated Cisco infrastructure testing suites. |
