@@ -4,6 +4,7 @@
 ### Enterprise Cloud Computing & AI Pipeline Engineer | Republic Polytechnic
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio_Website-Live-2563eb?style=for-the-badge)](https://thiagarajanhariharan.github.io/portfolio/)
+[![3D Louvre Heist](https://img.shields.io/badge/🏎️_3D_Louvre_Heist-Play_3D_Game-ef4444?style=for-the-badge)](https://thiagarajanhariharan.github.io/portfolio/heist.html)
 [![Arcade](https://img.shields.io/badge/👾_Contribution_Blaster-Play_Arcade-10b981?style=for-the-badge)](https://thiagarajanhariharan.github.io/portfolio/contribution-blaster.html)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/thiagarajan-hariharan-274b48374)
 
